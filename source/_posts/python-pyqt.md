@@ -107,6 +107,7 @@ The QMainWindow class is derived from QMainWindow (class), which inherits QWidge
 Qt provides different layout classes that enable you to create specific layouts. For example, you can use a grid layout to arrange widgets in a table format, or you can use a form layout to arrange widgets vertically or horizontally.
 
 ### Horizontal layout
+
 The example below creates a horizontal layout in which several *QPushButton* widgets are places. Any widget can be added to the horizontal layout (hbox).
 
 ```
@@ -147,6 +148,8 @@ if __name__ == '__main__':
     app.exit(app.exec_())
 ```
 
+![horizontal layout pyqt](/images/qhboxlayout.png)
+
 ### Form layout
 
 QFormLayout is a subclass of QWidget and can be used as a layout scheme. The widget is designed to display a form. An example is shown below
@@ -180,3 +183,9 @@ if __name__ == '__main__':
     app.exit(app.exec_())
 ```
 
+![form layout python](/images/qformlayout.png)
+
+\
+I've been experimenting with PyQt lately and I'm really impressed with its capabilities. It's easy to use and extremely versatile. I highly recommend giving it a try if you're looking for a way to create beautiful Python GUIs.
+
+There are widgets like QPushButton, QRadioButton, QPushButton, QRadioButton, QSpinBox, etc. Each widget has a purpose and  can be customized according to your needs. Besides these, there are many more widgets and there's much more to PyQt.

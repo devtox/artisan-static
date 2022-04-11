@@ -21,6 +21,93 @@ The Python standard library includes a module called sqlite3 which allows develo
 
 Example usage:
 
+```
+# sqlite3 is built into python3 and can be used direct
+import sqlite3
 
+# Get the database connection
+con = sqlite3.connect('database.db3')
+
+# Get the cursor object
+cur = con.cursor()
+
+# add table called foo in the database
+cur.execute('CREATE TABLE foo (o_id INTEGER PRIMARY KEY, fruit VARCHAR(20), veggies VARCHAR(30))')
+con.commit()
+
+# add data to table
+cur.execute('INSERT INTO foo (o_id, fruit, veggies) VALUES(NULL, "apple", "broccoli")')
+con.commit()
+
+# add another row to the table
+cur.execute('INSERT INTO foo (o_id, fruit, veggies) VALUES(NULL, "berry", "salad")')
+con.commit()
+
+# show data
+cur.execute('SELECT * FROM foo')
+print(cur.fetchall())
+```
+
+This program outputs
+
+```
+[(1, 'apple', 'broccoli'), (2, 'berry', 'salad')]
+```
+
+If you run it again, it shows an error that the table already 
+exists.
+
+```
+Traceback (most recent call last):
+  File "/home/frank/test.py", line 8, in <module>
+    cur.execute('CREATE TABLE foo (o_id INTEGER PRIMARY KEY, fruit VARCHAR(20), veggies VARCHAR(30))')
+sqlite3.OperationalError: table foo already exists
+```
+
+To solve this either remove the table, delete the database file or simply just skip creating the table (only create the database table on first run).
+
+In this example you saw several SQL queries. Namely:
+
+* the *CREATE TABLE* query which creates a dataasbe table.
+* the *INSERT INTO* query that adds data to the table
+* the *SELECT* query that gets data from the table
+
+You can also loop over the database table like so:
+
+```
+# show data
+cur.execute('SELECT * FROM foo')
+res = cur.fetchall()
+for line in res:
+    for f in line:
+        print(f)
+```
+  
+**Common Methods**
+
+Using the cursor you can fetch data or run SQL queries directly from Python. 
+
+```
+cur.execute('sql') # Execute sql
+cur.fetchone() # fetches the first result
+cur.fetchmany(n) # fetch n results
+cur.fetchall() # Get all results
+```
+
+You use the SQL language to interact with the database.  Execute sql to get the result.
+
+```
+sql = 'select * from table_name'
+cur.execute(sql)
+res = cur.fetchall()
+```
+
+When closing your program, you want to close the connections.
+
+```
+# Close the connection
+cur.close()
+conn.close()
+```
 
 

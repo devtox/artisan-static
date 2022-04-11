@@ -1,8 +1,8 @@
 <?php
 
 return [
-    'production' => false,
-    'baseUrl' => 'https://artisanstatic.netlify.app',
+    'production' => true,
+    'baseUrl' => 'https://python.bond',
     'site' => [
         'title' => 'Python.bond',
         'description' => 'Python programming blog',

@@ -10,6 +10,16 @@ PyQt5 is a set of Python bindings for The Qt5, a cross-platform application and 
 
 Assuming you have a basic understanding of Python, let's dive right in to PyQt5! We'll start by looking at the most fundamental aspects of PyQt5. Then, we'll move on to more advanced topics like signals and slots. By the end of this tutorial, you should be able to write your own PyQt5 applications with ease!
 
+### Why PyQt?
+
+PyQt was created as a toolkit for writing Python GUI applications rapidly. Its main benefits over other scripting languages such as Perl or Tcl/Tk include:
+
+It has a complete set of widgets that allow you to create any kind of application interface possible, not just the ones where everything is inside one window: PyQt also supports multi-window applications with multiple independent windows that can be moved arbitrarily across the desktop and that can support transparency.
+
+It has a robust and mature set of tools for creating graphical user interfaces, including Qt Designer which provides a visual drag-and-drop interface for creating PyQt application user interfaces.
+
+PyQt is a popular toolkit for creating Python GUI applications. Its main benefits over other scripting languages are its complete set of widgets, robust and mature tools, and support for all major operating systems: Windows, Mac OS X and Linux/Unix. You can deploy your applications on any of these platforms without having to rewrite your code.
+
 ### Hello world
 
 QLabel is used to display text and we're going to use it to create "Hello World". QLabel can take plain text, as well as HTML or even rich text (see setTextFormat()). You can also set an alignment for the contents using setAlignment(). The following code creates the hello world app.

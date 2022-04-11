@@ -89,3 +89,84 @@ if __name__ == '__main__':
 The result of the code is shown below. Clicking on any of the buttons calls the slot functions and output is shown in the terminal.
 
 ![Buttons with PyQt](/images/pyqt-qpushbutton.png)
+
+## Layout management
+
+The QMainWindow class is derived from QMainWindow (class), which inherits QWidget (class). The QMainWindow class can be used to create the main application window for an application.
+
+Qt provides different layout classes that enable you to create specific layouts. For example, you can use a grid layout to arrange widgets in a table format, or you can use a form layout to arrange widgets vertically or horizontally.
+
+### Horizontal layout
+The example below creates a horizontal layout in which several *QPushButton* widgets are places. Any widget can be added to the horizontal layout (hbox).
+
+```
+#coding = 'utf-8'
+
+import sys
+from PyQt5.QtWidgets import (QWidget, QPushButton, QApplication, QHBoxLayout, QVBoxLayout)
+
+class Example(QWidget):
+    def __init__(self):
+        super().__init__()
+        self.Init_UI()
+    def Init_UI(self):
+        self.setGeometry(300,300,400,100)
+        self.setWindowTitle('Horizontal Layout')
+
+        bt1 = QPushButton('Button 1', self)
+        bt2 = QPushButton('Button 2', self)
+        bt3 = QPushButton('Button 3', self)
+
+        hbox = QHBoxLayout()
+        hbox.addStretch(1)
+        hbox.addWidget(bt1)
+        hbox.addWidget(bt2)
+        hbox.addWidget(bt3)
+
+        vbox = QVBoxLayout()
+        vbox.addStretch(1)
+        vbox.addLayout(hbox)
+
+        self.setLayout(vbox)
+
+        self.show()
+
+if __name__ == '__main__':
+    app = QApplication(sys.argv)
+    ex = Example()
+    app.exit(app.exec_())
+```
+
+### Form layout
+
+QFormLayout is a subclass of QWidget and can be used as a layout scheme. The widget is designed to display a form. An example is shown below
+
+```
+#coding = 'utf-8'
+import sys
+from PyQt5.QtWidgets import (QWidget, QPushButton, QApplication, QFormLayout, QLabel, QLineEdit, QTextEdit)
+
+class Example(QWidget):
+    def __init__(self):
+        super().__init__()
+        self.Init_UI()
+
+    def Init_UI(self):
+        self.setGeometry(320,200,300,200)
+        self.setWindowTitle('Form Layout')
+        formlayout = QFormLayout()
+        nameLabel = QLabel("Name")
+        nameLineEdit = QLineEdit("")
+        descriptionLabel = QLabel("Description")
+        descriptionLineEdit = QTextEdit("")
+        formlayout.addRow(nameLabel,nameLineEdit)
+        formlayout.addRow(descriptionLabel,descriptionLineEdit)
+        self.setLayout(formlayout)
+        self.show()
+
+if __name__ == '__main__':
+    app = QApplication(sys.argv)
+    ex = Example()
+    app.exit(app.exec_())
+```
+

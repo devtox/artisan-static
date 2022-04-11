@@ -1,7 +1,7 @@
 ---
 title: SQLite Database with Python
 date: 2022-04-11
-image: /assets/images/pyqt-qpushbutton.png
+image: /assets/images/sqlitemon2.png
 comments: true
 ---
 SQLite is a relational database management system (RDBMS), similar to MySQL, Oracle, PostgreSQL, and Microsoft SQL Server. However, unlike these other database systems, SQLite is not a client-server database engine. Instead, it is embedded into the application that accesses the database. This makes SQLite suitable for use in mobile applications, web browsers, and general purpose programming languages.
@@ -13,7 +13,6 @@ SQLite supports standard relational database features such as tables, indexes, t
 ## SQL language
 
 SQL is a language used to manage databases. It stands for Structured Query Language and can be pronounced as "sequel" or "S-Q-L." SQL is used to query, insert, update, and delete data from a database. In addition, it can be used to create views, indexes, and stored procedures. SQL is not case sensitive, meaning that you can use upper or lower case letters interchangeably. However, most people prefer to use all uppercase letters when writing SQL code.
-
 
 ## sqlite3
 
@@ -82,7 +81,7 @@ for line in res:
     for f in line:
         print(f)
 ```
-  
+
 **Common Methods**
 
 Using the cursor you can fetch data or run SQL queries directly from Python. 
@@ -109,7 +108,6 @@ When closing your program, you want to close the connections.
 cur.close()
 conn.close()
 ```
-
 
 ### CRUD
 
@@ -139,6 +137,8 @@ Alternatively we can select all columns (*):
 SELECT * FROM users; // Returns everything in the 'users' table
 ```
 
+![python sqlite create table](/assets/images/sql-table.png)
+
 Updating data in our database is done using the UPDATE statement:
 
 ```
@@ -150,5 +150,3 @@ Finally, deleting data is done with DELETE:
 ```
 DELETE FROM users WHERE id = 1; // Deletes user with id 1
 ```
-
-

@@ -43,7 +43,7 @@ Now let's move on to more advanced PyQt5 topics like signals and slots!In PyQt5,
 
 Signals and slots are loosely coupled: A class can emit a signal that no other class is interested in, and no error will occur. Or, conversely,a class can receive a signal from another class that has no corresponding slot. This flexibility makes signals and slots powerful; however, it also comes with some disadvantages.
 
-```python
+```
 import sys
 from PyQt5.QtCore import *
 from PyQt5.QtGui import *
@@ -85,4 +85,3 @@ def button2_clicked():
 if __name__ == '__main__':
    window()
 ```
-

@@ -3,7 +3,7 @@ backend:
   branch: master
   squash_merges: true
 publish_mode: editorial_workflow
-media_folder: images
+media_folder: assets/images
 site_url: {{ $page->baseUrl }}
 collections:
   - name: "posts"

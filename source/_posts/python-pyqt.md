@@ -1,7 +1,7 @@
 ---
 title: Python PyQt
 date: 2022-04-11
-image: /images/pyqt.jpeg
+image: /assets/images/pyqt.jpeg
 comments: false
 ---
 ### What is PyQt5?
@@ -98,7 +98,7 @@ if __name__ == '__main__':
 
 The result of the code is shown below. Clicking on any of the buttons calls the slot functions and output is shown in the terminal.
 
-![Buttons with PyQt](/images/pyqt-qpushbutton.png)
+![Buttons with PyQt](/assets/images/pyqt-qpushbutton.png)
 
 ## Layout management
 
@@ -148,7 +148,7 @@ if __name__ == '__main__':
     app.exit(app.exec_())
 ```
 
-![horizontal layout pyqt](/images/qhboxlayout.png)
+![horizontal layout pyqt](/assets/images/qhboxlayout.png)
 
 ### Form layout
 
@@ -183,7 +183,7 @@ if __name__ == '__main__':
     app.exit(app.exec_())
 ```
 
-![form layout python](/images/qformlayout.png)
+![form layout python](/assets/images/qformlayout.png)
 
 \
 I've been experimenting with PyQt lately and I'm really impressed with its capabilities. It's easy to use and extremely versatile. I highly recommend giving it a try if you're looking for a way to create beautiful Python GUIs.

@@ -111,3 +111,44 @@ conn.close()
 ```
 
 
+### CRUD
+
+A database has four operations: Create, Read, Update, Delete (CRUD). You can do those operations using SQL queries. In this paragraph I will explain these operations.
+
+Let's say we have a table called "users" and it has three columns: "name", "email", and "password". Creating this table is as simple as running the following SQL:
+
+```
+CREATE TABLE users (name TEXT, email TEXT, password TEXT);
+```
+
+To insert data into the table, we use the INSERT INTO statement:
+
+```
+INSERT INTO users (name, email, password) VALUES ('John', 'john@example.com', '1234');
+```
+
+Reading from the database is just as easy. We use the SELECT statement to select specific columns from our table: 
+
+```
+SELECT name FROM users; // Returns all names in the 'users' table
+```
+
+Alternatively we can select all columns (*):
+
+```
+SELECT * FROM users; // Returns everything in the 'users' table
+```
+
+Updating data in our database is done using the UPDATE statement:
+
+```
+UPDATE users SET name = 'Jane' WHERE id = 1; // Sets Jane as the name for user with id 1
+```
+
+Finally, deleting data is done with DELETE:
+
+```
+DELETE FROM users WHERE id = 1; // Deletes user with id 1
+```
+
+

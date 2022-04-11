@@ -85,3 +85,7 @@ def button2_clicked():
 if __name__ == '__main__':
    window()
 ```
+
+The result of the code is shown below. Clicking on any of the buttons calls the slot functions and output is shown in the terminal.
+
+![Buttons with PyQt](/images/pyqt-qpushbutton.png)

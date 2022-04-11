@@ -76,7 +76,7 @@ Using the .set() function we set the horizontal and veritcal title.
 
 You can use the plot() function to plot data. As parameters it needs lists of horizontal and vertical coordinates. In the example below those are x and y. You can also configure the line width and the line style.
 
-```python
+```
 import matplotlib.pyplot as plt
 import numpy as np
 
@@ -103,7 +103,7 @@ plt.show()
 
 Scatter plot is a diagram that shows the relationship between two variables. This plot is usually the first one that people try when visualizing data. Each point in the scatter plot represent the value of two variables.
 
-```python
+```
 import matplotlib.pyplot as plt
 import numpy as np
 

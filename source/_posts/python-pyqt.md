@@ -14,7 +14,7 @@ Assuming you have a basic understanding of Python, let's dive right in to PyQt5!
 
 QLabel is used to display text and we're going to use it to create "Hello World". QLabel can take plain text, as well as HTML or even rich text (see setTextFormat()). You can also set an alignment for the contents using setAlignment(). The following code creates the hello world app.
 
-```python
+```
 import sys
 from PyQt5.QtCore import *
 from PyQt5.QtGui import *

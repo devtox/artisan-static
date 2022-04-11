@@ -4,8 +4,8 @@ return [
     'production' => false,
     'baseUrl' => 'https://artisanstatic.netlify.app',
     'site' => [
-        'title' => 'My Jigsaw Blog',
-        'description' => 'Personal blog of John Doe.',
+        'title' => 'Python.bond',
+        'description' => 'Python programming blog',
         'image' => 'default-share.png',
     ],
     'owner' => [
@@ -20,10 +20,6 @@ return [
         'analytics' => 'UA-XXXXX-Y',
         'disqus' => 'artisanstatic',
         'formcarry' => 'XXXXXXXXXXXX',
-        'cloudinary' => [
-            'cloudName' => 'artisanstatic',
-            'apiKey' => '365895137117119',
-        ],
     ],
     'collections' => [
         'posts' => [
@@ -32,7 +28,7 @@ return [
             'extends' => '_layouts.post',
             'section' => 'postContent',
             'isPost' => true,
-            'comments' => true,
+            'comments' => false,
             'tags' => [],
             'hasTag' => function ($page, $tag) {
                 return collect($page->tags)->contains($tag);

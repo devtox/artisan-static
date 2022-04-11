@@ -1,8 +1,8 @@
 ---
 title: Python PyQt
 date: 2022-04-11
-image: https://res.cloudinary.com/practicaldev/image/fetch/s--5x8ZbR8v--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/i/5b5e3vc30d0rqehp0wh5.jpg
-comments: true
+image: /images/pyqt.jpeg
+comments: false
 ---
 ### What is PyQt5?
 

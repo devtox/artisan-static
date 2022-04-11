@@ -18,7 +18,6 @@ return [
     'services' => [
         'cmsVersion' => '~2.10',
         'analytics' => 'UA-XXXXX-Y',
-        'disqus' => 'artisanstatic',
         'formcarry' => 'XXXXXXXXXXXX',
     ],
     'collections' => [

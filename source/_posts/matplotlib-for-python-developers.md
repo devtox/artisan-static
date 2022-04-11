@@ -8,8 +8,6 @@ Matplotlib is an incredibly popular Python data visualization library. It's used
 
 ## Install matplotlib
 
-### line plot
-
 Since matplotlib is so popular, there are many different ways to install it. The easiest way is probably to just use pip:
 
 ```
@@ -30,7 +28,7 @@ conda install -c anaconda matplotlib
 
 There are a few other ways to install matplotlib, but these are the two most common. 
 
-## Use matplotlib
+## Line plot
 
 Once you have it installed, you can import it into your Python scripts with the following line:
 

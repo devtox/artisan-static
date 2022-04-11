@@ -11,8 +11,9 @@ $events->afterBuild(function ($jigsaw) {
 
 function media($path)
 {
-    $cloudName = $GLOBALS['container']->config['services']['cloudinary']['cloudName'];
-    return "https://res.cloudinary.com/{$cloudName}/{$path}";
+    //$cloudName = $GLOBALS['container']->config['services']['cloudinary']['cloudName'];
+    //return "https://res.cloudinary.com/{$cloudName}/{$path}";
+    return $path;
 }
 
 function content_sanitize($value)

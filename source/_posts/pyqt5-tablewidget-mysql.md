@@ -164,7 +164,7 @@ print(data)
 
 Iterate over a two-dimensional tuple and displaying the data on a table.
 
-```python
+```
 # Iterate over a two-dimensional tuple, displaying id and name on the interface table
 x = 0
 for i in data:

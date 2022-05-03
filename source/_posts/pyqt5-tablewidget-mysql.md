@@ -10,6 +10,8 @@ PyQt is a Python binding of the cross-platform GUI toolkit Qt. It offers Python 
 
 The [QtDesigner](https://oneminutepython.com/pyqt5-designer) module can be used to develop GUI applications using a drag-and-drop interface similar to Visual Basic or Delphi. The generated code can then be customized by hand or using one of the available pyuic5 frontends.
 
+### MySQL
+
 MySQL is a relational database management system (RDBMS) based on the Structured Query Language (SQL). SQL is used to add, remove, and modify data in databases. MySQL is free and open source software under the terms of the GNU General Public License, and it is also available under a number of proprietary licenses published by Oracle Corporation.
 
 ```

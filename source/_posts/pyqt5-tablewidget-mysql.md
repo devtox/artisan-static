@@ -179,7 +179,7 @@ for i in data:
 
 The example below fills the data from the table with MySQL database data.
 
-![](/assets/images/pyqt5-mysql-tablewidget.png)
+![pyqt5 mysql tabletwidget](/assets/images/pyqt5-mysql-tablewidget.png)
 
 Full code:
 

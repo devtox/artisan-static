@@ -1,7 +1,7 @@
 ---
 title: pyqt5 tablewidget mysql
 date: 2022-05-03
-image: /assets/images/pyqt5-mysql-tablewidget.png
+image: /assets/images/database.jpg
 comments: false
 ---
 Learn how to use PyQt5 tablewidget with MySQL. Database table creation + SQL statements. 

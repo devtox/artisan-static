@@ -6,9 +6,9 @@ comments: false
 ---
 Learn how to use PyQt5 tablewidget with MySQL. Database table creation + SQL statements. 
 
-PyQt is a Python binding of the cross-platform GUI toolkit Qt. It offers Python programmers a convenient way to create graphical user interfaces (GUIs). One advantage of using PyQt instead of Qt directly is that it provides support for automatic binding generation of Qt's signals and slots to Python's signals and slots. This can greatly simplify development by allowing the programmer to focus on the implementation rather than on boilerplate code.
+PyQt is a Python binding of the cross-platform GUI toolkit Qt. It offers Python programmers a convenient way to create graphical user interfaces ([GUIs](https://www.python-me.org/a-brief-introduction-to-pyqt)). One advantage of using PyQt instead of Qt directly is that it provides support for automatic binding generation of Qt's signals and slots to Python's signals and slots. This can greatly simplify development by allowing the programmer to focus on the implementation rather than on boilerplate code.
 
-The QtDesigner module can be used to develop GUI applications using a drag-and-drop interface similar to Visual Basic or Delphi. The generated code can then be customized by hand or using one of the available pyuic5 frontends.
+The [QtDesigner](https://oneminutepython.com/pyqt5-designer) module can be used to develop GUI applications using a drag-and-drop interface similar to Visual Basic or Delphi. The generated code can then be customized by hand or using one of the available pyuic5 frontends.
 
 MySQL is a relational database management system (RDBMS) based on the Structured Query Language (SQL). SQL is used to add, remove, and modify data in databases. MySQL is free and open source software under the terms of the GNU General Public License, and it is also available under a number of proprietary licenses published by Oracle Corporation.
 
@@ -46,7 +46,7 @@ Let's make a random interface with designer: add a tableWidget and save it as he
 
 The hello.ui interface file is converted to hello.py with the following code.
 
-```python
+```
 # -*- coding: utf-8 -*-
 
 # Form implementation generated from reading ui file 'hello.ui'
@@ -146,7 +146,7 @@ Create a new main.py and write the following code to display the data in the dat
 
 The main points to understand are.
 
-```python
+```
 # Connect to mysql and query the database, cur.fetchall() returns a two-dimensional tuple
 #Database connection object
 conn = pymysql.connect(host='localhost', port=3306, user='root', password="1234", db="test")
@@ -183,7 +183,7 @@ The example below fills the data from the table with MySQL database data.
 
 Full code:
 
-```python
+```
 import sys
 from PyQt5 import QtGui, QtWidgets
 from PyQt5.QtCore import *
